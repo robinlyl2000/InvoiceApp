@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManualInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手動輸入"
+            app:backgroundTint="#F9D458"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_arrow_forward_24"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/scannerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:text="掃描發票"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            app:layout_constraintTop_toBottomOf="@id/btnManualInput"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Camera"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#AAAAAA"
+            app:layout_constraintTop_toBottomOf="@id/scannerTitle"
+            app:layout_constraintLeft_toLeftOf="@id/scannerTitle"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
